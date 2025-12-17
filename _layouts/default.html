@@ -14,8 +14,8 @@
     {% include footer.html %}
 
 
-<!-- Image to hack wechat -->
-<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Image to hack wechat; use `site.sidebar-avatar` to avoid 404 when icon_wechat.png missing -->
+<img src="{{ site.sidebar-avatar }}" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
 
 </body>
